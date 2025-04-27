@@ -1,0 +1,50 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>World Time Clock</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="time-container">
+            <div id="time" class="time">00:00:00</div>
+            <div id="date" class="date">Monday, January 1, 2024</div>
+        </div>
+
+        <div class="controls">
+            <select id="timezone-select">
+                <option value="local" data-en="Local Time" data-tr="Yerel Saat">Local Time</option>
+                <option value="America/New_York" data-en="New York" data-tr="New York">New York</option>
+                <option value="Europe/London" data-en="London" data-tr="Londra">London</option>
+                <option value="Asia/Tokyo" data-en="Tokyo" data-tr="Tokyo">Tokyo</option>
+                <option value="Australia/Sydney" data-en="Sydney" data-tr="Sidney">Sydney</option>
+            </select>
+
+            <div class="toggle-container">
+                <label class="toggle-label">
+                    <input type="checkbox" id="time-format">
+                    <span data-en="24H" data-tr="24S">24H</span>
+                </label>
+            </div>
+
+            <div class="language-toggle">
+                <button id="lang-en" class="lang-btn active">English</button>
+                <button id="lang-tr" class="lang-btn">Türkçe</button>
+            </div>
+
+            <div class="theme-toggle">
+                <button id="theme-light" class="theme-btn" data-en="Light" data-tr="Açık">Light</button>
+                <button id="theme-dark" class="theme-btn" data-en="Dark" data-tr="Koyu">Dark</button>
+            </div>
+
+            <button id="fullscreen-btn" title="Toggle Fullscreen">
+                <i class="fas fa-expand"></i>
+            </button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
